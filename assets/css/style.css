@@ -1,0 +1,230 @@
+/* CUSTOM CSS STYLES for my portfolio */
+
+/* =
+****************
+SITE COLOR SCHEME 
+****************
+Social media hover icons -- mediumaquamarine: #66CDAA
+Links in paragraph --       coral: #FF7F50
+Form buttons --             aquamarine4: #458b74
+****************
+*/
+
+/* ==============
+GLOBAL STYLES
+================*/
+
+body {
+  margin-top: 50px;
+  position: relative;
+  font-family: 'Lato', Arial, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Droid Serif', Times, Georgia, serif;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 28px; 
+  font-size: 1.1em;
+}
+
+a:link, 
+a:visited {
+  color: #333;
+}
+
+a:hover, 
+a:active {
+  color: #555;
+}
+
+small {
+  text-transform: lowercase;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 80px 0 40px;
+}
+
+.btn-danger {
+  background: #f25184;
+  border-color: #f25184;
+}
+
+.btn-danger:hover,
+.btn-danger:active {
+  background: #f46995;  
+  border-color: #f25184;
+}
+
+
+/* ==============
+HEADER AND NAV
+================*/
+
+.navbar-inverse {
+  opacity: 0.7;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.navbar-header .navbar-brand {
+    color: mediumaquamarine; 
+}
+
+.navbar-brand {
+  font-size: 18px;
+}
+
+
+/* ==============
+ABOUT SECTION
+================*/
+
+#home {
+  background: url('https://unsplash.it/1200/500/?image=837') center center;
+  background-size: cover;
+  height: 400px;
+}
+
+#home h2 {
+  color: #fff;
+  margin-top: 220px;
+  font-size: 40px;
+  border-bottom: 1px dashed #fff; 
+}
+
+#about a {
+/*  color: #f25184;*/
+    color: coral; 
+}
+
+img.img-circle.img-responsive {
+    max-width: 317px; 
+    width: 100%; 
+}
+
+/* ==============
+PROJECTS SECTION
+================*/
+
+#portfolio {
+  /* Background pattern from subtlepatterns.com */
+  background: url('../img/grid-bg.png') repeat; 
+}
+
+#portfolio h2,
+#portfolio h4, 
+#portfolio p.lead {
+  text-align: center;
+  color: #000;
+}
+
+#portfolio p.lead {
+  padding-bottom: 30px;
+}
+
+#portfolio .container {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#portfolio .col-sm-4 {
+  text-align: center;
+  padding: 0 35px 40px;
+  box-sizing: border-box;
+}
+
+a.bead {
+    font-weight: bold;
+    border-bottom: 1px dotted #333;
+}
+
+/* ==============
+CONTACT SECTION
+================*/
+
+.social-icons a:link, 
+.social-icons a:visited {
+ color: #444;
+}
+
+.social-icons a:hover, 
+.social-icons a:active {
+  color: coral;
+  position: relative; 
+  top: 1px;
+}
+
+.social-icons i.fa:first-child {
+    margin-left: 0;
+}
+
+.social-icons i.fa {
+    margin: 0 7px; 
+}
+
+/* ==============
+FOOTER
+================*/
+
+footer {
+  background: #444;
+  color: mediumaquamarine; 
+  font-size: 16px;
+  padding-top: 25px;
+}
+
+footer a:link, 
+footer a:visited {
+    color: mediumaquamarine; 
+    border-bottom: 1px dotted mediumaquamarine;
+} 
+
+footer a:hover, 
+footer a:active {
+    color: antiquewhite; 
+}
+
+/* ==============
+MEDIA QUERIES
+================*/
+
+/* Extra Small devices (Less than 590px) */
+@media screen (max-width: 590px) {
+    
+   #portfolio img {
+        max-width: 500px;
+        width: 100%;
+    }
+    
+}
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+
+    #portfolio div.row div.col-sm-12.col-md-4:nth-child(3n+2) {
+        margin-bottom: 3.125rem; 
+    }
+
+}
