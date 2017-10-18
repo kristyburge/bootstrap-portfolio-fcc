@@ -124,8 +124,7 @@ PROJECTS SECTION
 ================*/
 
 #portfolio {
-  /* Background pattern from subtlepatterns.com */
-  background: url('../img/grid-bg.png') repeat; 
+  background: rgba(34,34,34,0.7); 
 }
 
 #portfolio h2,
@@ -140,8 +139,8 @@ PROJECTS SECTION
 }
 
 #portfolio .container {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
 }
 
 #portfolio .col-sm-4 {
@@ -159,7 +158,6 @@ img.thumbnail {
     border: 3px solid #666;
     padding: 20px 0;
 }
-
 
 /* ==============
 CONTACT SECTION
@@ -212,10 +210,10 @@ MEDIA QUERIES
 ================*/
 
 /* Extra Small devices (Less than 590px) */
-@media screen (max-width: 590px) {
+@media screen (max-width: 750px) {
     
    #portfolio img {
-        max-width: 500px;
+        max-width: 400px;
         width: 100%;
     }
     
