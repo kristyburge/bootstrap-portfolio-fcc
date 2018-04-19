@@ -2,7 +2,7 @@
 
 /* =
 ****************
-SITE COLOR SCHEME 
+SITE COLOR SCHEME
 ****************
 Social media hover icons -- mediumaquamarine: #66CDAA
 Links in paragraph --       coral: #FF7F50
@@ -34,16 +34,16 @@ h6 {
 }
 
 p {
-  margin: 0 0 28px; 
+  margin: 0 0 28px;
   font-size: 1.1em;
 }
 
-a:link, 
+a:link,
 a:visited {
   color: #333;
 }
 
-a:hover, 
+a:hover,
 a:active {
   color: #555;
 }
@@ -67,7 +67,7 @@ section {
 
 .btn-danger:hover,
 .btn-danger:active {
-  background: #f46995;  
+  background: #f46995;
   border-color: #f25184;
 }
 
@@ -84,7 +84,7 @@ HEADER AND NAV
 }
 
 .navbar-header .navbar-brand {
-    color: mediumaquamarine; 
+    color: mediumaquamarine;
 }
 
 .navbar-brand {
@@ -106,17 +106,31 @@ ABOUT SECTION
   color: #fff;
   margin-top: 220px;
   font-size: 40px;
-  border-bottom: 1px dashed #fff; 
+  border-bottom: 1px dashed #fff;
 }
 
 #about a {
 /*  color: #f25184;*/
-    color: coral; 
+    color: coral;
 }
 
 img.img-circle.img-responsive {
-    max-width: 317px; 
-    width: 100%; 
+    max-width: 317px;
+    width: 100%;
+}
+
+.profile-image {
+  border: 2px solid #343434;
+  transition: all 0.7s;
+}
+
+.profile-image:hover {
+  border: 4px solid purple;
+  transform: rotate(-360deg) scale(0.9);
+}
+
+.intro {
+  padding-top: 40px;
 }
 
 /* ==============
@@ -124,11 +138,11 @@ PROJECTS SECTION
 ================*/
 
 #portfolio {
-  background: rgba(34,34,34,0.7); 
+  background: rgba(34,34,34,0.7);
 }
 
 #portfolio h2,
-#portfolio h4, 
+#portfolio h4,
 #portfolio p.lead {
   text-align: center;
   color: #000;
@@ -149,6 +163,15 @@ PROJECTS SECTION
   box-sizing: border-box;
 }
 
+.project {
+  transition: all 0.8s;
+}
+
+.project:hover {
+  border: 4px dotted mediumaquamarine;
+  transform: scale(1.1);
+}
+
 a.bead {
     font-weight: bold;
     border-bottom: 1px dotted #333;
@@ -163,15 +186,15 @@ img.thumbnail {
 CONTACT SECTION
 ================*/
 
-.social-icons a:link, 
+.social-icons a:link,
 .social-icons a:visited {
  color: #444;
 }
 
-.social-icons a:hover, 
+.social-icons a:hover,
 .social-icons a:active {
   color: coral;
-  position: relative; 
+  position: relative;
   top: 1px;
 }
 
@@ -180,7 +203,7 @@ CONTACT SECTION
 }
 
 .social-icons i.fa {
-    margin: 0 7px; 
+    margin: 0 7px;
 }
 
 /* ==============
@@ -189,20 +212,20 @@ FOOTER
 
 footer {
   background: #444;
-  color: mediumaquamarine; 
+  color: mediumaquamarine;
   font-size: 16px;
   padding-top: 25px;
 }
 
-footer a:link, 
+footer a:link,
 footer a:visited {
-    color: mediumaquamarine; 
+    color: mediumaquamarine;
     border-bottom: 1px dotted mediumaquamarine;
-} 
+}
 
-footer a:hover, 
+footer a:hover,
 footer a:active {
-    color: antiquewhite; 
+    color: antiquewhite;
 }
 
 /* ==============
@@ -211,22 +234,22 @@ MEDIA QUERIES
 
 /* Extra Small devices (Less than 590px) */
 @media screen (max-width: 750px) {
-    
+
    #portfolio img {
         max-width: 400px;
         width: 100%;
     }
-    
+
 }
 
 
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    
+
 
     #portfolio div.row div.col-sm-12.col-md-4:nth-child(3n+2) {
-        margin-bottom: 3.125rem; 
+        margin-bottom: 3.125rem;
     }
 
 }
